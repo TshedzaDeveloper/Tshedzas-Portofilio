@@ -1,0 +1,255 @@
+{% extends 'main/base.html' %}
+{% load static %}
+
+{% block content %}
+<!-- Hero Section -->
+<section id="home" class="hero-section vh-100 d-flex align-items-center">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6">
+                <div class="hero-content">
+                    <h1 class="display-4 mb-3">Hello, I'm Kingdom Makunamisha</h1>
+                    <h2 class="h3 mb-4">Django Developer</h2>
+                    <p class="lead mb-4">I create modern and responsive websites that help businesses grow and succeed online.</p>
+                    <a href="https://pdf.ac/3tL7xV" class="btn btn-primary btn-lg">Hire me</a>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="hero-image text-center">
+                    <img src="{% static 'assets/king.jpg' %}" alt="Kingdom Makunamisha" class="img-fluid rounded-circle">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- About Section -->
+<section id="about" class="py-5">
+    <div class="container">
+        <h2 class="text-center mb-5">About Me</h2>
+        <div class="row align-items-center">
+            <div class="col-lg-6">
+                <img src="{% static 'assets/cf776595-a374-4e6e-9e00-d424191b4a20.jpg' %}" alt="About Me" class="img-fluid rounded">
+            </div>
+            <div class="col-lg-6">
+                <p class="lead">I'm a 23-year-old dynamic and enthusiastic person looking for opportunities in Web Design and Development, specializing in front-end development.</p>
+                <p>A firm believer in my own abilities, I am also a team player who thrives in a challenging environment. As a fresher with new and dynamic project ideas, I bring a fresh perspective to web development.</p>
+                <p>Well-versed in programming languages including HTML, CSS, JavaScript, Python, and have a strong background in front-end development and customer relations.</p>
+                <a href="https://pdf.ac/3tL7xV" class="btn btn-primary mt-3">Download CV</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Services Section -->
+<section id="services" class="py-5 bg-light">
+    <div class="container">
+        <h2 class="text-center mb-5">My Services</h2>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <i class="fas fa-paint-brush fa-3x mb-3 text-primary"></i>
+                        <h3 class="card-title h4">Designer</h3>
+                        <p class="card-text">I am a fresher web designer with different design ideas. In today's competitive world, new freshers have more mind-blowing and exploring ideas.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <i class="fas fa-code fa-3x mb-3 text-primary"></i>
+                        <h3 class="card-title h4">Development</h3>
+                        <p class="card-text">In this digital world, I help people build their business and brand digitally which helps in many things like brand building and increased sales.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <i class="fas fa-search fa-3x mb-3 text-primary"></i>
+                        <h3 class="card-title h4">SEO</h3>
+                        <p class="card-text">I provide SEO services to help businesses rank higher in search results, which helps people to make their business visible in Google search results.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Skills Section -->
+<section id="skills" class="py-5">
+    <div class="container">
+        <h2 class="text-center mb-5">My Skills</h2>
+        <div class="row">
+            <div class="col-lg-6">
+                <h3 class="mb-4">Technical Skills</h3>
+                <div class="mb-4">
+                    <div class="d-flex justify-content-between mb-1">
+                        <span>HTML</span>
+                        <span>90%</span>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                </div>
+                <div class="mb-4">
+                    <div class="d-flex justify-content-between mb-1">
+                        <span>CSS</span>
+                        <span>90%</span>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                </div>
+                <div class="mb-4">
+                    <div class="d-flex justify-content-between mb-1">
+                        <span>JavaScript</span>
+                        <span>50%</span>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                </div>
+                <div class="mb-4">
+                    <div class="d-flex justify-content-between mb-1">
+                        <span>Python</span>
+                        <span>70%</span>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <h3 class="mb-4">Experience & Education</h3>
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <h4 class="h5">Front End Development Experience</h4>
+                        <p>6 months of freelance development experience working on various projects and collaborating with different clients.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="h5">Continuous Learning</h4>
+                        <p>Constantly improving my skills through online courses, tutorials, and hands-on project experience.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Projects Section -->
+<section id="projects" class="py-5 bg-light">
+    <div class="container">
+        <h2 class="text-center mb-5">My Projects</h2>
+        <div class="row g-4">
+            <div class="col-md-6 col-lg-3">
+                <div class="card h-100">
+                    <img src="{% static 'assets/king.jpg' %}" class="card-img-top" alt="Project 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Netflix Clone</h5>
+                        <p class="card-text">A Netflix-inspired streaming platform interface.</p>
+                        <a href="https://ntflixed-proje.vercel.app/" class="btn btn-primary" target="_blank">View Project</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="card h-100">
+                    <img src="{% static 'assets/cf776595-a374-4e6e-9e00-d424191b4a20.jpg' %}" class="card-img-top" alt="Project 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Tesler Page</h5>
+                        <p class="card-text">A modern landing page design.</p>
+                        <a href="https://tesler-page.vercel.app/" class="btn btn-primary" target="_blank">View Project</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="card h-100">
+                    <img src="{% static 'assets/king.jpg' %}" class="card-img-top" alt="Project 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Personal Website</h5>
+                        <p class="card-text">A custom website showcasing my work.</p>
+                        <a href="https://mywebsite-app.vercel.app/" class="btn btn-primary" target="_blank">View Project</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="card h-100">
+                    <img src="{% static 'assets/cf776595-a374-4e6e-9e00-d424191b4a20.jpg' %}" class="card-img-top" alt="Project 4">
+                    <div class="card-body">
+                        <h5 class="card-title">Twitter Clone</h5>
+                        <p class="card-text">A Twitter-inspired social media interface.</p>
+                        <a href="https://project-twitter-two.vercel.app/" class="btn btn-primary" target="_blank">View Project</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="py-5">
+    <div class="container">
+        <h2 class="text-center mb-5">Contact Me</h2>
+        <div class="row">
+            <div class="col-lg-6 mb-4 mb-lg-0">
+                <div class="card">
+                    <div class="card-body">
+                        <h3 class="h4 mb-4">Get in Touch</h3>
+                        <form method="post">
+                            {% csrf_token %}
+                            <div class="mb-3">
+                                {{ form.name }}
+                            </div>
+                            <div class="mb-3">
+                                {{ form.email }}
+                            </div>
+                            <div class="mb-3">
+                                {{ form.subject }}
+                            </div>
+                            <div class="mb-3">
+                                {{ form.message }}
+                            </div>
+                            <button type="submit" class="btn btn-primary">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h3 class="h4 mb-4">Contact Information</h3>
+                        <div class="d-flex mb-3">
+                            <i class="fas fa-user me-3 text-primary"></i>
+                            <div>
+                                <h4 class="h6 mb-1">Name</h4>
+                                <p class="mb-0">Tshedza Makunamisha</p>
+                            </div>
+                        </div>
+                        <div class="d-flex mb-3">
+                            <i class="fas fa-map-marker-alt me-3 text-primary"></i>
+                            <div>
+                                <h4 class="h6 mb-1">Address</h4>
+                                <p class="mb-0">Stone Gate Centurion</p>
+                            </div>
+                        </div>
+                        <div class="d-flex">
+                            <i class="fas fa-envelope me-3 text-primary"></i>
+                            <div>
+                                <h4 class="h6 mb-1">Email</h4>
+                                <p class="mb-0">onikakholo@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="social-links mt-4">
+                            <a href="https://github.com/TshedzaDeveloper" target="_blank" class="me-3"><i class="fab fa-github fa-2x"></i></a>
+                            <a href="https://www.linkedin.com/in/tshedza-makunamisha-2a1a45350/" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %} 
