@@ -2,7 +2,9 @@ services:
   - type: web
     name: tshedza-portfolio
     env: python
-    buildCommand: pip install -r requirements.txt && python manage.py collectstatic --noinput
+    buildCommand: |
+      pip install -r requirements.txt
+      python manage.py collectstatic --noinput
     startCommand: gunicorn portfolio.wsgi:application
     envVars:
       - key: PYTHON_VERSION
@@ -12,4 +14,6 @@ services:
       - key: SECRET_KEY
         generateValue: true
       - key: WEB_CONCURRENCY
-        value: 4 
+        value: 4
+      - key: DEBUG
+        value: False 
