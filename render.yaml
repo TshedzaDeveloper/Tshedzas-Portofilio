@@ -3,7 +3,7 @@ services:
     name: tshedza-portfolio
     env: python
     buildCommand: |
-      pip install -r requirements.txt
+      pip install -r requirements.txt --no-cache-dir
       python manage.py collectstatic --noinput
     startCommand: gunicorn portfolio.wsgi:application
     envVars:
@@ -16,4 +16,6 @@ services:
       - key: WEB_CONCURRENCY
         value: 4
       - key: DEBUG
-        value: False 
+        value: False
+      - key: PIP_NO_CACHE_DIR
+        value: "true" 
