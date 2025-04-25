@@ -5,7 +5,8 @@ services:
     buildCommand: |
       pip install -r requirements.txt --no-cache-dir
       python manage.py collectstatic --noinput
-    startCommand: gunicorn portfolio.wsgi:application
+      python manage.py migrate
+    startCommand: gunicorn portfolio.wsgi:application --log-level debug --access-logfile - --error-logfile -
     envVars:
       - key: PYTHON_VERSION
         value: 3.11.0
@@ -18,4 +19,6 @@ services:
       - key: DEBUG
         value: False
       - key: PIP_NO_CACHE_DIR
-        value: "true" 
+        value: "true"
+      - key: ALLOWED_HOSTS
+        value: "tshedza-portofilio.onrender.com,localhost,127.0.0.1" 
